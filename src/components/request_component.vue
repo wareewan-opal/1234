@@ -20,7 +20,7 @@ const newWish  = computed(() => {
   <div class="wish">
     <textarea cols="70" rows="10" placeholder="   input your wish..." v-model="newWish.noteDetail"></textarea>
    </div> 
-   <button class="update" v-if="newWish.id > 0" @click="$emit('update' , newWish)">Updata</button>
+   <button class="update" v-if="newWish.id > 0" @click="$emit('update' , newWish)">Update</button>
     <button class="create" @click="$emit('create' , newWish)">Create</button>
     <router-link :to="{name: 'Home' }"><button class="button2">BACK TO HOROSCOPE HOME</button></router-link>
 

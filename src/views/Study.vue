@@ -5,7 +5,7 @@ const deck = ref([])
 const type = ref('study');
 //Get Card
 const getCard = async () => {
-  const res = await fetch ('http://localhost:5002/major-arcana')
+  const res = await fetch ('http://localhost:5000/major-arcana')
   if(res.status === 200){
     deck.value = await res.json()
   }
